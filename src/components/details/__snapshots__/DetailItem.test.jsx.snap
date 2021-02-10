@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DetailItem component renders DetailItem 1`] = `
+<DocumentFragment>
+  <figure>
+    <img
+      style="height: 50%; width: 50%;"
+    />
+    <figcaption />
+    <figcaption>
+      Temperament: 
+    </figcaption>
+    <figcaption>
+      Bred For:
+    </figcaption>
+  </figure>
+</DocumentFragment>
+`;
