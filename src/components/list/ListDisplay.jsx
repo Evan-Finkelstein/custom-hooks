@@ -2,9 +2,11 @@
 import React from 'react';
 import { useBreeds } from '../../hooks/breeds';
 import ListItem from './ListItem';
+import styles from './List.css'
+import { useTheme } from '../../context/themeContext';
 
 const ListDisplay = () => {
-
+    const { theme, setTheme } = useTheme()
     const { loading, breeds, page, setPage } = useBreeds();
 
     return (
@@ -13,14 +15,14 @@ const ListDisplay = () => {
 
             {loading ?
                 <div>Loading...</div>
-
-                : <div data-testid="breeds"> <ul >
+                :
+                <div data-testid="breeds" className={`${styles[theme]}`}> <ul >
                     {breeds.map(breed => (
                         <li key={breed.id} style={{ margin: '50px' }}>
                             < ListItem {...breed} />
                         </li>
-                    ))};
-        </ul>
+                    ))}
+                </ul>
                 </div>}
 
             <div>{page === 0 ?

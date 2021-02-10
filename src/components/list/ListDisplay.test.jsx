@@ -5,6 +5,7 @@ import { setupServer } from 'msw/node';
 import allBreedResponse from '../../fixtures/allBreeds.json';
 import ListDisplay from './ListDisplay';
 import { BrowserRouter as Router } from 'react-router-dom';
+import styles from './ListDisplay.css'
 
 
 const server = setupServer(
