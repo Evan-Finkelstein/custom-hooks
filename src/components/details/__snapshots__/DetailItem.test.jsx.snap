@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DetailItem component renders DetailItem 1`] = `
+<DocumentFragment>
+  <figure>
+    <img
+      src="[object Object]"
+      style="height: 50%; width: 50%;"
+    />
+    <figcaption>
+      Affenpinscher
+    </figcaption>
+    <figcaption>
+      Temperament: Stubborn, Curious, Playful, Adventurous, Active, Fun-loving
+    </figcaption>
+    <figcaption>
+      Bred For:Small rodent hunting, lapdog
+    </figcaption>
+  </figure>
+</DocumentFragment>
+`;
