@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListItem component renders ListItem 1`] = `
+<DocumentFragment>
+  <a
+    href="/breed/1"
+  >
+     
+    <figure>
+      <img
+        src="https://cdn2.thedogapi.com/images/BJa4kxc4X.jpg"
+        style="height: 50%; width: 50%;"
+      />
+      <figcaption>
+        Affenpinscher
+      </figcaption>
+    </figure>
+  </a>
+</DocumentFragment>
+`;

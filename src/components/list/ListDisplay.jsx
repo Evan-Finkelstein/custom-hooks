@@ -1,7 +1,7 @@
 
 import React from 'react';
-import { useBreeds } from '../../hooks/breeds'
-import ListItem from './ListItem'
+import { useBreeds } from '../../hooks/breeds';
+import ListItem from './ListItem';
 
 const ListDisplay = () => {
 
@@ -13,13 +13,16 @@ const ListDisplay = () => {
 
             {loading ?
                 <div>Loading...</div>
+
                 : <div data-testid="breeds"> <ul >
                     {breeds.map(breed => (
                         <li key={breed.id} style={{ margin: '50px' }}>
                             < ListItem {...breed} />
                         </li>
                     ))};
-        </ul></div>}
+        </ul>
+                </div>}
+
             <div>{page === 0 ?
                 null
                 :

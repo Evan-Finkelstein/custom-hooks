@@ -2,7 +2,7 @@ import React from 'react';
 import { render, screen, waitFor } from '@testing-library/react';
 import { rest } from 'msw';
 import { setupServer } from 'msw/node';
-import singleBreedResponse from '../fixtures/singleBreed.json';
+import singleBreedResponse from '../../fixtures/singleBreed.json';
 import DetailsDisplay from './DetailsDisplay';
 
 const server = setupServer(

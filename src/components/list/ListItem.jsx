@@ -14,8 +14,8 @@ const ListItem = ({ name, image, id }) => (
 
 ListItem.propTypes = {
     name: PropTypes.string,
-    image: PropTypes.string,
-    id: PropTypes.string,
+    image: PropTypes.object,
+    id: PropTypes.number,
 };
 
 export default ListItem;
