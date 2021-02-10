@@ -6,7 +6,7 @@ import styles from './List.css'
 import { useTheme } from '../../context/themeContext';
 
 const ListDisplay = () => {
-    const { theme, setTheme } = useTheme()
+    const { theme } = useTheme()
     const { loading, breeds, page, setPage } = useBreeds();
 
     return (

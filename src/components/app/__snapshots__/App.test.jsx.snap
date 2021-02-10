@@ -2,11 +2,19 @@
 
 exports[`App component renders App 1`] = `
 <DocumentFragment>
-  <a
-    href="/"
+  <div
+    class="light"
   >
-    Home
-  </a>
+    Dark Mode  
+    <input
+      type="checkbox"
+    />
+    <a
+      href="/"
+    >
+      Home
+    </a>
+  </div>
   <div>
     Loading...
   </div>

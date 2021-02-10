@@ -5,7 +5,7 @@ import { setupServer } from 'msw/node';
 import allBreedResponse from '../../fixtures/allBreeds.json';
 import ListDisplay from './ListDisplay';
 import { BrowserRouter as Router } from 'react-router-dom';
-import styles from './ListDisplay.css'
+import { ThemeProvider } from '../../context/themeContext'
 
 
 const server = setupServer(
@@ -19,7 +19,7 @@ describe('breed by id component', () => {
     afterAll(() => server.close());
 
     it('fetches and displays a breeds details', async () => {
-        render(<Router><ListDisplay /></Router>);
+        render(<ThemeProvider><Router><ListDisplay /></Router></ThemeProvider>);
 
         screen.getByText('Loading...');
 
